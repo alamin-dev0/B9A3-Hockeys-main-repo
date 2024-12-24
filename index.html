@@ -13,18 +13,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="icon" href="./Images/logo.png">
     <title>Hockey’s</title>
+    <!-- custom style  -->
     <style>
-        .manrope{
+        .manrope {
             font-family: "Manrope", serif;
         }
     </style>
+    <!-- custom js  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    <header class="container mx-auto">
+    <header class="container mx-auto manrope">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -33,27 +48,30 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Home</a></li>
+                        <li><a class="link link-hover hover:bg-transparent active:bg-transparent">About</a></li>
+                        <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Blog</a></li>
+                        <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Contact</a></li>
                     </ul>
                 </div>
-                <a class="btn bg-transparent btn-ghost text-3xl font-extrabold hover:bg-transparent">Hockey’s</a>
+                <a class="btn bg-transparent btn-ghost text-3xl font-extrabold">Hockey<p class="text-primary-color m-0">
+                        ’</p>s</a>
             </div>
-            <div class="navbar-center hidden lg:flex">
+            <div class="navbar-center hidden lg:flex items-center">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 3</a></li>
+                    <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Home</a></li>
+                    <li><a class="link link-hover hover:bg-transparent active:bg-transparent">About</a></li>
+                    <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Blog</a></li>
+                    <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Contact</a></li>
                 </ul>
             </div>
-            <div class="navbar-end">
-                <a class="btn">Button</a>
+            <div class="navbar-end flex gap-6">
+                <div class="hidden md:block">
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Search" />
+                </div>
+                <a class="btn btn-primary bg-primary-color text-white rounded-xl border-none">Get Ticket</a>
+
             </div>
         </div>
     </header>
