@@ -36,42 +36,98 @@
 
 <body>
     <header class="container mx-auto manrope">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+        <!-- nav section  -->
+        <nav class="mb-3">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Home</a></li>
+                            <li><a class="link link-hover hover:bg-transparent active:bg-transparent">About</a></li>
+                            <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Blog</a></li>
+                            <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Contact</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <a class="btn hover:bg-transparent bg-transparent text-3xl font-extrabold m-0 border-none">Hockey<span
+                            class="text-primary-color m-0 -mx-2">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex items-center">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Home</a></li>
                         <li><a class="link link-hover hover:bg-transparent active:bg-transparent">About</a></li>
                         <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Blog</a></li>
                         <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Contact</a></li>
                     </ul>
                 </div>
-                <a class="btn bg-transparent btn-ghost text-3xl font-extrabold m-0">Hockey<span class="text-primary-color m-0 -mx-2">’</span>s</a>
-            </div>
-            <div class="navbar-center hidden lg:flex items-center">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Home</a></li>
-                    <li><a class="link link-hover hover:bg-transparent active:bg-transparent">About</a></li>
-                    <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Blog</a></li>
-                    <li><a class="link link-hover hover:bg-transparent active:bg-transparent">Contact</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end flex gap-6">
-                <div class="hidden md:block">
-                    <label class="input input-bordered flex items-center gap-2">
-                        <input type="text" class="grow" placeholder="Search" />
-                </div>
-                <a class="btn btn-primary bg-primary-color text-white rounded-xl border-none">Get Ticket</a>
+                <div class="navbar-end flex gap-6 w-full">
+                    <div class="hidden md:block">
+                        <label class="input input-bordered flex items-center gap-2">
+                            <input type="text" class="grow" placeholder="Search" />
+                    </div>
+                    <a class="btn btn-primary bg-primary-color text-white rounded-xl border-none">Get Ticket</a>
 
+                </div>
             </div>
+        </nav>
+        <!-- header section -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="hero rounded-xl container mx-auto" style="background-image: url(./Images/1.png);">
+                    <div class="hero-overlay bg-opacity-60 bg-transparent rounded-lg"></div>
+                    <div class="hero-content text-neutral-content text-center">
+                        <div class="w-full py-72">
+                            <h1 class="mb-5 text-5xl font-bold"></h1>
+                            <p class="mb-5">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-overlay bg-opacity-60 bg-transparent rounded-lg"></div>
+        <div class="hero-content text-neutral-content text-center">
+            <div class="w-full py-72">
+                <h1 class="mb-5 text-5xl font-bold"></h1>
+                <p class="mb-5">
+
+                </p>
+            </div>
+        </div>
         </div>
     </header>
     <main>
